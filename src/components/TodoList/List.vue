@@ -1,6 +1,6 @@
 <template>
     <v-main class="list">
-        <h3 class="text-h3 font-weight-medium mb-5">To Do List</h3>
+        <!-- <h3 class="text-h3 font-weight-medium mb-5">To Do List</h3>
         <v-card>
             <v-card-title>
                 <v-text-field
@@ -65,69 +65,69 @@
                     </v-btn>
                 </v-card-actions>
             </v-card>
-        </v-dialog>
+        </v-dialog> -->
     </v-main>
 </template>
 
 <script>
-export default {
-    name: "List",
-    data(){
-        return {
-            search: null,
-            dialog: false,
-            headers: [
-                {
-                    text: "Task",
-                    align: "start",
-                    sortable: true,
-                    value: "task",
-                },
-                { text: "Priority", value: "priority" },
-                { text: "Note", value: "note" },
-                { text: "Actions", value: "actions" },
-            ],
-            todos: [
-                {
-                    task: "bernafas",
-                    priority: "Penting",
-                    note: "huffttt",
-                },
-                {
-                    task: "nongkrong",
-                    priority: "Tidak penting",
-                    note: "bersama teman2",
-                },
-                {
-                    task: "masak",
-                    priority: "Biasa",
-                    note: "masak air 500ml",
-                },
-            ],
-            formTodo: {
-                task: null,
-                priority: null,
-                note: null,
-            },
-        };
-    },
-    methods: {
-        save() {
-            this.todos.push(this.formTodo);
-            this.resetForm();
-            this.dialog = false;
-        },
-        cancel() {
-            this.resetForm();
-            this.dialog = false;
-        },
-        resetForm() {
-            this.formTodo = {
-                task: null,
-                priority: null,
-                note: null,
-            };
-        },
-    },
-};
+// export default {
+//     name: "List",
+//     data(){
+//         // return {
+//         //     search: null,
+//         //     dialog: false,
+//         //     headers: [
+//         //         {
+//         //             text: "Task",
+//         //             align: "start",
+//         //             sortable: true,
+//         //             value: "task",
+//         //         },
+//         //         { text: "Priority", value: "priority" },
+//         //         { text: "Note", value: "note" },
+//         //         { text: "Actions", value: "actions" },
+//         //     ],
+//         //     todos: [
+//         //         {
+//         //             task: "bernafas",
+//         //             priority: "Penting",
+//         //             note: "huffttt",
+//         //         },
+//         //         {
+//         //             task: "nongkrong",
+//         //             priority: "Tidak penting",
+//         //             note: "bersama teman2",
+//         //         },
+//         //         {
+//         //             task: "masak",
+//         //             priority: "Biasa",
+//         //             note: "masak air 500ml",
+//         //         },
+//         //     ],
+//         //     formTodo: {
+//         //         task: null,
+//         //         priority: null,
+//         //         note: null,
+//         //     },
+//         // };
+//     },
+//     methods: {
+//         // save() {
+//         //     this.todos.push(this.formTodo);
+//         //     this.resetForm();
+//         //     this.dialog = false;
+//         // },
+//         // cancel() {
+//         //     this.resetForm();
+//         //     this.dialog = false;
+//         // },
+//         // resetForm() {
+//         //     this.formTodo = {
+//         //         task: null,
+//         //         priority: null,
+//         //         note: null,
+//         //     };
+//         // },
+//     },
+// };
 </script>
